@@ -17,10 +17,10 @@
     "tool_definitions": "The patsnap_search and patsnap_fetch tools have specific, action-oriented descriptions for discovering patents and scientific literature and retrieving selected records. The README documents authentication, Streamable HTTP setup, supported search and filtering capabilities, tool selection, and example prompts."
   },
   "relatedServers": [
-    "patsnap/mcp-for-patent-literature/ip-intelligence/patsnap-advanced-patent-search",
-    "patsnap/mcp-for-patent-literature/ip-intelligence/patsnap-deep-patent-mining",
-    "patsnap/mcp-for-patent-literature/ip-intelligence/patsnap-patent-briefing",
-    "patsnap/mcp-for-patent-literature/rd-innovation/patsnap-scientific-literature-journals"
+    "patsnap/mcp/ip-intelligence/patsnap-advanced-patent-search",
+    "patsnap/mcp/ip-intelligence/patsnap-deep-patent-mining",
+    "patsnap/mcp/ip-intelligence/patsnap-patent-briefing",
+    "patsnap/mcp/rd-innovation/patsnap-scientific-literature-journals"
   ],
   "categories": [
     "search",

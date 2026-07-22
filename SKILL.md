@@ -1,9 +1,9 @@
 ---
 name: patsnap-patent-literature-search
-description: Search PatSnap's global patent and scientific literature databases together using natural-language, semantic, keyword, and BM25-based queries with multidimensional filters, then fetch patent or literature records as Markdown.
+description: Search Patsnap's global patent and scientific literature databases together using natural-language, semantic, keyword, and BM25-based queries with multidimensional filters, then fetch patent or literature records as Markdown.
 homepage: https://open.patsnap.com/marketplace/mcp-servers/patsnap-search
 metadata:
-  author: PatSnap
+  author: Patsnap
   category: "RD Innovation"
   version: 1.0.0
   requires:
@@ -12,11 +12,11 @@ metadata:
 
 ## Setup
 
-Get your API key at [PatSnap Open Platform](https://open.patsnap.com).
+Get your API key at [Patsnap Open Platform](https://open.patsnap.com).
 
-# PatSnap Patent & Literature Search
+# Patsnap Patent & Literature Search
 
-This skill connects an AI agent to the **PatSnap Patent & Literature Search MCP server**. The server searches PatSnap's patent and literature databases through two tools: `patsnap_search` and `patsnap_fetch`.
+This skill connects an AI agent to the **Patsnap Patent & Literature Search MCP server**. The server searches Patsnap's patent and literature databases through two tools: `patsnap_search` and `patsnap_fetch`.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Configure the MCP server in your client:
 }
 ```
 
-Replace `YOUR_API_KEY` with your PatSnap Open Platform API key.
+Replace `YOUR_API_KEY` with your Patsnap Open Platform API key.
 
 ## Tool Selection
 
@@ -70,4 +70,4 @@ Use it after discovery when the user needs the Markdown content of a selected re
 
 - **MCP Server**: [https://open.patsnap.com/marketplace/mcp-servers/patsnap-search](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search)
 - **MCP Quick Start**: [https://open.patsnap.com/devportal/guides/mcp-quickstart](https://open.patsnap.com/devportal/guides/mcp-quickstart)
-- **PatSnap Open Platform**: [https://open.patsnap.com](https://open.patsnap.com)
+- **Patsnap Open Platform**: [https://open.patsnap.com](https://open.patsnap.com)

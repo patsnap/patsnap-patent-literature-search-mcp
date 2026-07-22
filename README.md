@@ -4,23 +4,23 @@
 
 Search 200M+ patents and scientific literature in natural language,
 directly inside Claude, Cursor, or any MCP-compatible AI tool.
-Powered by PatSnap's proprietary R&D intelligence database.
+Powered by Patsnap's proprietary R&D intelligence database.
 
-## About PatSnap
+## About Patsnap
 
-PatSnap is a global innovation intelligence platform covering 200M+
+Patsnap is a global innovation intelligence platform covering 200M+
 patents across 170+ jurisdictions (USPTO, EPO, WIPO and more), 216M+
 scientific papers, and R&D data.
 
-To explore PatSnap data interactively, try
-[Eureka](https://eureka.patsnap.com), PatSnap's AI-native R&D
+To explore Patsnap data interactively, try
+[Eureka](https://eureka.patsnap.com), Patsnap's AI-native R&D
 assistant. To access data programmatically, use the MCP servers or
-REST API via [PatSnap Open Platform](https://open.patsnap.com).
+REST API via [Patsnap Open Platform](https://open.patsnap.com).
 
 ## What It Does
 
 Patent & Literature Search MCP gives your AI agent direct access to
-PatSnap's patent and academic literature databases — searchable
+Patsnap's patent and academic literature databases — searchable
 together in a single query, in natural language, without switching
 tools or learning Boolean syntax.
 
@@ -39,7 +39,7 @@ tools or learning Boolean syntax.
 
 ### 1. Get your API key
 
-Register at [PatSnap Open Platform](https://open.patsnap.com) and
+Register at [Patsnap Open Platform](https://open.patsnap.com) and
 generate a free API key from the
 [Patent & Literature Search MCP page](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search).
 New accounts include 10,000 free credits. No credit card required.
@@ -68,7 +68,7 @@ Add the following to your MCP configuration file:
 }
 ```
 
-Replace `YOUR_API_KEY` with your key from PatSnap Open Platform.
+Replace `YOUR_API_KEY` with your key from Patsnap Open Platform.
 
 ## Tools
 
@@ -101,11 +101,11 @@ solutions exist in patents and academic papers?
 
 ## Resources
 
-- [PatSnap](https://www.patsnap.com)
-- [PatSnap Open Platform](https://open.patsnap.com)
+- [Patsnap](https://www.patsnap.com)
+- [Patsnap Open Platform](https://open.patsnap.com)
 - [Patent & Literature Search MCP](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search)
 - [Eureka](https://eureka.patsnap.com)
-- [All PatSnap MCP Servers](https://github.com/patsnap/mcp-for-patent-literature)
+- [All Patsnap MCP Servers](https://github.com/patsnap/mcp)
 
 ## License
 
@@ -113,4 +113,4 @@ Apache-2.0
 
 ---
 
-Powered by [PatSnap](https://www.patsnap.com). Innovate with Confidence.
+Powered by [Patsnap](https://www.patsnap.com). Innovate with Confidence.
