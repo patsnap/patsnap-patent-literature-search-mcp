@@ -33,6 +33,22 @@ tools or learning Boolean syntax.
 - **Precision filtering** — filter by assignee, inventor, legal
   status, jurisdiction, date range, and citation count simultaneously
 
+## Tools
+
+### `patsnap_search`
+
+Search patents, scientific literature, or both in a single request.
+Supports natural-language and semantic queries, precise keyword and
+BM25-based text search, and filters such as assignee, inventor, IPC
+classification, legal status, jurisdiction, date range, and citations.
+
+### `patsnap_fetch`
+
+Retrieve a patent or literature record as Markdown using a result URL.
+Patent records can also be fetched by publication number and may include
+bibliographic data, claims, descriptions, and drawings. Literature records
+include core bibliographic and abstract metadata.
+
 ## Quick Start
 
 ### 1. Get your API key
