@@ -1,37 +1,64 @@
-# PatSnap Patent & Literature Search
+# Patent & Literature Search MCP
 
-> by [PatSnap](https://www.patsnap.com)
+Search 200M+ patents and scientific literature in natural language,
+directly inside Claude, Cursor, or any MCP-compatible AI tool.
+Powered by PatSnap's proprietary R&D intelligence database.
 
-## Product Definition
+## About PatSnap
 
-PatSnap Patent & Literature Search MCP is a Model Context Protocol server that enables AI agents to search PatSnap's global patent and scientific literature databases together. It supports natural-language and semantic queries, precise keyword and BM25-based text search, and multidimensional filters for efficient retrieval of patent and academic intelligence. It can also fetch patent or literature records as Markdown.
+PatSnap is a global innovation intelligence platform covering 200M+
+patents across 170+ jurisdictions (USPTO, EPO, WIPO and more), 216M+
+scientific papers, and R&D data.
 
-## Quick Links
+To explore PatSnap data interactively, try
+[Eureka](https://eureka.patsnap.com), PatSnap's AI-native R&D
+assistant. To access data programmatically, use the MCP servers or
+REST API via [PatSnap Open Platform](https://open.patsnap.com).
 
-- [PatSnap](https://www.patsnap.com)
-- [PatSnap Open Platform](https://open.patsnap.com)
-- [Patent & Literature Search MCP](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search)
+## What It Does
 
-## Version
+Patent & Literature Search MCP gives your AI agent direct access to
+PatSnap's patent and academic literature databases — searchable
+together in a single query, in natural language, without switching
+tools or learning Boolean syntax.
 
-`v1.0.0` (Beta)
+- **Patent search** — keyword, assignee, inventor, IPC class, legal
+  status, date range, and citation filters
+- **Literature search** — semantic and keyword search across
+  peer-reviewed scientific papers
+- **Fusion search** — patents and papers returned together in one
+  query, with structured output ready for AI reasoning
+- **Natural language input** — describe your problem or topic in
+  plain English or Chinese; the MCP constructs the search strategy
+- **Precision filtering** — filter by assignee, inventor, legal
+  status, jurisdiction, date range, and citation count simultaneously
 
-## Supported Tools
+## Quick Start
 
-### `patsnap_search`
+### 1. Get your API key
 
-Search patents and academic papers with natural-language queries, semantic search, precise keyword matching, BM25-based text search, and filters such as assignee, IPC classification, date, and jurisdiction.
+Register at [PatSnap Open Platform](https://open.patsnap.com) and
+generate a free API key from the
+[Patent & Literature Search MCP page](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search).
+New accounts include 10,000 free credits. No credit card required.
 
-### `patsnap_fetch`
+### 2. Add to Claude Code
 
-Fetch patent or literature content in Markdown from a record URL. Patent records can also be fetched by publication number and may include bibliographic details, claims, descriptions, and drawings. Literature records provide basic abstract metadata.
+```bash
+claude mcp add --transport http search-tool \
+  "https://connect.patsnap.com/2b0355/logic-mcp?apikey=YOUR_API_KEY"
+```
 
-## Installation
+Restart Claude Code and type `/mcp` to confirm it loaded.
+
+### 3. Add to Cursor or Windsurf
+
+Add the following to your MCP configuration file:
 
 ```json
 {
   "mcpServers": {
-    "patsnap_patent_literature_search": {
+    "patsnap_patent_literature": {
       "url": "https://connect.patsnap.com/2b0355/logic-mcp?apikey=YOUR_API_KEY",
       "type": "streamableHttp"
     }
@@ -39,24 +66,37 @@ Fetch patent or literature content in Markdown from a record URL. Patent records
 }
 ```
 
-Replace `YOUR_API_KEY` with an API key from [PatSnap Open Platform](https://open.patsnap.com).
+Replace `YOUR_API_KEY` with your key from PatSnap Open Platform.
 
-## Usage Examples
+## Example Prompts
 
-- Find recent patents and academic papers about solid-state battery electrolytes.
-- Search for patents by an assignee within a jurisdiction, IPC classification, and publication date range.
-- Retrieve the Markdown content of a patent by publication number.
-- Fetch the abstract metadata for a literature result returned by `patsnap_search`.
+```
+What is Tesla actually working on in battery technology — show me
+their recent patent filings, group by technology area, and identify
+who is leading each.
+```
 
-## Related Links
+```
+Which GLP-1 receptor agonist patents are expiring before 2028,
+and what does recent literature say about next-generation mechanisms?
+```
 
-- Official MCP page: [https://open.patsnap.com/marketplace/mcp-servers/patsnap-search](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search)
-- MCP Quick Start: [https://open.patsnap.com/devportal/guides/mcp-quickstart](https://open.patsnap.com/devportal/guides/mcp-quickstart)
-- Source repository: [https://github.com/patsnap/patent-literature-search](https://github.com/patsnap/patent-literature-search)
+```
+My EV battery loses 40% range in cold weather. What technical
+solutions exist in patents and academic papers?
+```
+
+## Resources
+
+- [PatSnap](https://www.patsnap.com)
+- [PatSnap Open Platform](https://open.patsnap.com)
+- [Patent & Literature Search MCP](https://open.patsnap.com/marketplace/mcp-servers/patsnap-search)
+- [Eureka](https://eureka.patsnap.com)
+- [All PatSnap MCP Servers](https://github.com/patsnap/mcp-for-patent-literature)
 
 ## License
 
-Apache License 2.0 (see [LICENSE](./LICENSE))
+Apache-2.0
 
 ---
 
