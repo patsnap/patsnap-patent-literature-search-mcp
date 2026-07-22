@@ -1,5 +1,7 @@
 # Patent & Literature Search MCP
 
+[![Smithery badge](https://smithery.ai/badge/openpatsnap/patsnap-patent-literature-search)](https://smithery.ai/servers/openpatsnap/patsnap-patent-literature-search)
+
 Search 200M+ patents and scientific literature in natural language,
 directly inside Claude, Cursor, or any MCP-compatible AI tool.
 Powered by PatSnap's proprietary R&D intelligence database.
