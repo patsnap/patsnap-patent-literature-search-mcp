@@ -32,7 +32,7 @@ Fetch patent or literature content in Markdown from a record URL. Patent records
 {
   "mcpServers": {
     "patsnap_patent_literature_search": {
-      "url": "https://connect.patsnap.com/mcp/patsnap-search?apikey=YOUR_API_KEY",
+      "url": "https://connect.patsnap.com/2b0355/logic-mcp?apikey=YOUR_API_KEY",
       "type": "streamableHttp"
     }
   }

@@ -7,7 +7,7 @@ metadata:
   category: "RD Innovation"
   version: 1.0.0
   requires:
-    mcp_endpoint: "https://connect.patsnap.com/mcp/patsnap-search?apikey=YOUR_API_KEY"
+    mcp_endpoint: "https://connect.patsnap.com/2b0355/logic-mcp?apikey=YOUR_API_KEY"
 ---
 
 ## Setup
@@ -26,7 +26,7 @@ Configure the MCP server in your client:
 {
   "mcpServers": {
     "patsnap_patent_literature_search": {
-      "url": "https://connect.patsnap.com/mcp/patsnap-search?apikey=YOUR_API_KEY",
+      "url": "https://connect.patsnap.com/2b0355/logic-mcp?apikey=YOUR_API_KEY",
       "type": "streamableHttp"
     }
   }
