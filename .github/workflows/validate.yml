@@ -1,0 +1,24 @@
+name: Validate repository metadata
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required repository files
+        run: |
+          test -s README.md
+          test -s LICENSE
+          test -s glama.json
+      - name: Validate glama.json
+        run: python -m json.tool glama.json >/dev/null
